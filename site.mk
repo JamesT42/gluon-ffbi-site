@@ -29,12 +29,14 @@ GLUON_SITE_PACKAGES := \
 	haveged \
 	iptables \
 	iwinfo \
+##	kmods for Futro Offloader, do not include these in normal router images
 	kmod-usb-core \
 	kmod-usb2 \
 	kmod-usb-hid \
 	kmod-usb-net \
 	kmod-usb-net-asix \
 	kmod-r8169 \
+##
 	gluon-ffbi-map
 
 ##	DEFAULT_GLUON_RELEASE
@@ -43,7 +45,7 @@ GLUON_SITE_PACKAGES := \
 #			opkg compare-versions "$1" '>>' "$2"
 #		to decide if a version is newer or not.
 
-DEFAULT_GLUON_RELEASE := 0.6+exp$(shell date '+%Y%m%d')
+DEFAULT_GLUON_RELEASE := 0.1+exp$(shell date '+%Y%m%d')
 
 
 ##	GLUON_RELEASE
