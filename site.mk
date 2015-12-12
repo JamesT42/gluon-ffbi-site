@@ -1,4 +1,4 @@
-##	gluon site.mk makefile example
+##	gluon site.mk makefile ffbi
 
 ##	GLUON_SITE_PACKAGES
 #		specify gluon/openwrt packages to include here
@@ -29,14 +29,13 @@ GLUON_SITE_PACKAGES := \
 	haveged \
 	iptables \
 	iwinfo \
-##	kmods for Futro Offloader, do not include these in normal router images
 	kmod-usb-core \
 	kmod-usb2 \
 	kmod-usb-hid \
 	kmod-usb-net \
 	kmod-usb-net-asix \
 	kmod-r8169 \
-##
+	kmod-8021q \
 	gluon-ffbi-map
 
 ##	DEFAULT_GLUON_RELEASE
