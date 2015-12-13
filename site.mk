@@ -36,6 +36,9 @@ GLUON_SITE_PACKAGES := \
 	kmod-usb-net-asix \
 	kmod-r8169 \
 	kmod-8021q \
+	gluon-luci-mesh-vpn-fastd \
+	gluon-luci-node-role \
+	gluon-luci-private-wifi \
 	gluon-ffbi-map
 
 ##	DEFAULT_GLUON_RELEASE
