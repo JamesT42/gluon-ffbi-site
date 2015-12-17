@@ -11,4 +11,4 @@ make manifest GLUON_BRANCH=experimental
 contrib/sign.sh site/secret.key images/sysupgrade/experimental.manifest
 
 #rm -rf /home/james/gluon/firmware/experimental
-#cp -r images /home/james/gluon/firmware/experimental
+cp -r images /home/james/gluon-output/firmware/experimental
