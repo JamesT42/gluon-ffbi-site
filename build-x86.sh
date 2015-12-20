@@ -17,6 +17,6 @@ make -j6 GLUON_TARGET=x86-generic GLUON_BRANCH=$branch V=s
 make manifest GLUON_BRANCH=$branch
 contrib/sign.sh site/secret.key output/images/sysupgrade/$branch.manifest
 
-#rm -rf /home/james/gluon/firmware/$branch
-mkdir ../gluon-output/firmware/$branch
+mkdir -p ../gluon-output/firmware/$branch
 cp -ru output/images/* ../gluon-output/firmware/$branch
+rm -rf gluon/firmware/$branch/*
